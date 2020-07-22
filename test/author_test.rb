@@ -14,4 +14,9 @@ class AuthorTest < Minitest::Test
     charlotte_bronte = Author.new({first_name: "Charlotte", last_name: "Bronte"})
     assert_equal "Charlotte Bronte", charlotte_bronte.name
   end
+
+  def test_has_books
+    charlotte_bronte = Author.new({first_name: "Charlotte", last_name: "Bronte"})
+    assert_equal [], charlotte_bronte.books
+  end 
 end
