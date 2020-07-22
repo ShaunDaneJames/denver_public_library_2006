@@ -37,5 +37,7 @@ class LibraryTest < Minitest::Test
 
     dpl.add_author(charlotte_bronte)
     dpl.add_author(harper_lee)
+
+    assert_equal [charlotte_bronte, harper_lee], dpl.authors
   end
 end
